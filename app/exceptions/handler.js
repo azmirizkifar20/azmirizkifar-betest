@@ -1,3 +1,4 @@
+'use strict'
 const Response = require('../utils/response')
 
 const handler = async (err, req, res, next) => {

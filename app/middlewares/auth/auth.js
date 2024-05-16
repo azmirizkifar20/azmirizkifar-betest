@@ -1,3 +1,4 @@
+'use strict'
 const jwt = require('jsonwebtoken')
 const jwt_secret = process.env.JWT_SECRET_KEY
 const validateKey = process.env.JWT_VALIDATE_KEY

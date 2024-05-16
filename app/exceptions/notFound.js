@@ -1,3 +1,4 @@
+'use strict'
 const asyncHandler = require('express-async-handler')
 
 const HttpException = require('./Exceptions')
