@@ -28,7 +28,7 @@ cd $path
 git status
 git pull origin $branch
 
-echo "checking node version"
+echo "checking node version..."
 node -v
 
 # build & restart app
