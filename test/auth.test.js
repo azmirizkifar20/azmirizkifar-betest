@@ -1,4 +1,5 @@
-require('dotenv').config()
+// require('dotenv').config()
+require('../src')
 const request = require('supertest')
 const expect = require('chai').expect
 const baseUrl = process.env.BASE_URL
@@ -135,3 +136,8 @@ describe('API Delete User Account', () => {
     expect(result.body.message).equal('Successfully delete user!')
   })
 })
+
+after(() => {
+  // Memastikan proses berhenti setelah semua pengujian selesai
+  process.exit(0);
+});
