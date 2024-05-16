@@ -29,4 +29,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          script: ${{ secrets.PROJECT_PATH }}/sync.sh -b main -d "${{ secrets.PROJECT_PATH }}""
+          script: ${{ secrets.PROJECT_PATH }}/sync.sh -b main -d "${{ secrets.PROJECT_PATH }}"
