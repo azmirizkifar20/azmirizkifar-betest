@@ -1,13 +1,13 @@
 {
-  "name": "ms-azmirf-betest",
+  "name": "ms-azmirizkifar-betest",
   "version": "1.0.0",
-  "description": "Backend Test",
+  "description": "BE test",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "azmirf",
+  "author": "azmirizkifar",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
