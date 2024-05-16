@@ -6,7 +6,7 @@ while getopts d:b: flag
 do
     case "${flag}" in
         b) branch=${OPTARG};;
-        p) path=${OPTARG};;
+        d) path=${OPTARG};;
     esac
 done
 
