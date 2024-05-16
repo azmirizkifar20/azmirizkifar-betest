@@ -1,4 +1,3 @@
-// require('dotenv').config()
 require('../src')
 const request = require('supertest')
 const expect = require('chai').expect
@@ -138,6 +137,6 @@ describe('API Delete User Account', () => {
 })
 
 after(() => {
-  // Memastikan proses berhenti setelah semua pengujian selesai
-  process.exit(0);
+  // stop the process
+  process.exit(0)
 });
