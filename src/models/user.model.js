@@ -1,3 +1,4 @@
+'use strict'
 const Helpers = require('../utils/helpers')
 
 module.exports = (mongoose) => {

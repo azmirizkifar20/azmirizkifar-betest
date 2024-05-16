@@ -1,7 +1,7 @@
 {
   "name": "ms-azmirizkifar-betest",
   "version": "1.0.0",
-  "description": "BE test",
+  "description": "Microservice Backend Test",
   "main": "server.js",
   "scripts": {
     "test": "mocha",

@@ -1,3 +1,4 @@
+'use strict'
 const mongoose = require('mongoose')
 const HOST = process.env.DB_HOST
 const PORT = process.env.DB_PORT

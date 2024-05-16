@@ -1,3 +1,5 @@
+'use strict'
+
 class Response {
     send(response, statusCode, values, message, error=null) {
         let data = {
