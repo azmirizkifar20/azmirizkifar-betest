@@ -32,7 +32,7 @@ echo "checking node version..."
 node -v
 
 # build & restart app
-pnpm i
+pnpm install --frozen-lockfile --strict-peer-dependencies
 pm2 restart ms-azmirizkifar-betest
 
 echo -e "\n"
