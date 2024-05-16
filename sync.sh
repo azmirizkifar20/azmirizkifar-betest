@@ -28,8 +28,11 @@ cd $path
 git status
 git pull origin $branch
 
+echo "checking node version"
+node -v
+
 # build & restart app
-pnpm install
+pnpm i
 pm2 restart ms-azmirizkifar-betest
 
 echo -e "\n"
