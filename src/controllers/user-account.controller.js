@@ -32,7 +32,7 @@ class UserAccountController {
     // set data to redis
     await cacheService.set(`account:${accountId}`, JSON.stringify(account))
 
-    return Response.send(res, 200, { cache: false, user: account }, 'Successfully get user account!')
+    return Response.send(res, 200, { cache: false, account }, 'Successfully get user account!')
   })
 
   /*
@@ -63,7 +63,7 @@ class UserAccountController {
     // re-set data to redis
     await cacheService.set(`account:${accountId}`, JSON.stringify(finaluserAccount))
 
-    return Response.send(res, 200, finaluserAccount, 'Successfully get user!')
+    return Response.send(res, 200, finaluserAccount, 'Successfully update user!')
   })
 
   /*

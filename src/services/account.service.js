@@ -107,7 +107,12 @@ class AccountService {
 
   getAccountsByLastLoginDateTime = async(days) => {
     const date = dayjs().subtract(days, 'day').toDate()
-    return await this.account.find({ lastLoginDateTime: { $lt: date } })
+    return await this.account
+    .find({
+      lastLoginDateTime: { $lt: date }
+    })
+    .select(['-password'])
+    .populate('user', '-_id -__v')
   }
 
   deleteUserAccount = async(accountId) => {

@@ -10,7 +10,6 @@ class UserService {
   getUserBySpesificData = async(data) => {
     return await this.user
       .findOne(data)
-      .select(['-_id'])
   }
 
   updateUser = async(userId, data) => {
