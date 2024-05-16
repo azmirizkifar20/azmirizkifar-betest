@@ -28,8 +28,8 @@ git status
 git pull origin $branch
 
 # build & restart app
-npm install
-pm2 restart dev-gateway
+pnpm install
+pm2 restart ms-azmirizkifar-betest
 
 echo -e "\n"
 echo "🚀 Application deployed!"
