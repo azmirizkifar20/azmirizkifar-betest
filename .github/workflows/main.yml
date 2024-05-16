@@ -19,7 +19,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    
+
   deployment:
     name: Deploy to development
     runs-on: ubuntu-latest
@@ -33,4 +33,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          script: /var/www/html/ms-azmirizkifar-betest/sync.sh -b main
+          script: ${{ secrets.PROJECT_PATH }}/sync.sh -b main -p ${{ secrets.PROJECT_PATH }}
