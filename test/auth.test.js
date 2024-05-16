@@ -1,4 +1,4 @@
-require('../src')
+require('dotenv').config()
 const request = require('supertest')
 const expect = require('chai').expect
 const baseUrl = process.env.BASE_URL
