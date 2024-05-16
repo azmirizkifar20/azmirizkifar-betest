@@ -39,7 +39,7 @@ class AuthController {
     // remove validate key
     delete loginData.account.validateKey
 
-    return Response.send(res, 201, loginData, 'Successfully login!')
+    return Response.send(res, 200, loginData, 'Successfully login!')
   })
 
   /*
@@ -56,7 +56,7 @@ class AuthController {
       const { accountId } = req.body
 
       const token = await accountService.generateToken(accountId)
-      return Response.send(res, 201, token, 'Successfully refresh token!')
+      return Response.send(res, 200, token, 'Successfully refresh token!')
     })
 }
 

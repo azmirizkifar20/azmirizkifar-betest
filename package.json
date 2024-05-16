@@ -4,8 +4,9 @@
   "description": "BE test",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Passed\"",
-    "start": "node server.js"
+    "test": "mocha",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "azmirizkifar",
   "license": "ISC",
@@ -22,6 +23,9 @@
     "redis": "^4.6.13"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "chai": "^3.5.0",
+    "mocha": "^10.4.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^7.0.0"
   }
 }
