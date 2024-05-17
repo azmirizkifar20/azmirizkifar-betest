@@ -13,4 +13,5 @@ let lookupData = {
 }
 
 // execute first test
+require('./utils.test')(expect)
 require('./auth.test')(request, lookupData, expect, baseUrl)
